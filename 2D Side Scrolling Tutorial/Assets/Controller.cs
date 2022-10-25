@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class Controller : MonoBehaviour
 {
     /// <summary> Player References </summary>
-    private PlayerInput playerInput;
+    public PlayerInput playerInput { get; private set; }
 
     /// <summary> Player Physics </summary>
     [SerializeField] private Transform groundCheck;
